@@ -1,0 +1,169 @@
+:root {
+    --primary: #4a6bff;
+    --income: #2ecc71;
+    --expense: #e74c3c;
+    --light: #f9f9f9;
+    --dark: #333;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--dark);
+}
+
+.container {
+    background: white;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    padding: 2rem;
+    width: 100%;
+    max-width: 450px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+}
+
+h3 {
+    margin: 1.5rem 0 1rem;
+    color: var(--dark);
+}
+
+.balance {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.balance h2 {
+    font-size: 2rem;
+    color: var(--dark);
+}
+
+.inc-exp-container {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    padding: 1.2rem;
+    margin: 1.2rem 0;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.income, .expense {
+    flex: 1;
+    text-align: center;
+}
+
+.income {
+    border-right: 1px solid #eee;
+}
+
+.money {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+.money.plus {
+    color: var(--income);
+}
+
+.money.minus {
+    color: var(--expense);
+}
+
+.chart-container {
+    margin: 1.5rem 0;
+    height: 200px;
+}
+
+.transactions {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.transactions li {
+    background: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    padding: 0.8rem 1rem;
+    margin: 0.5rem 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.transactions li.plus {
+    border-left: 4px solid var(--income);
+}
+
+.transactions li.minus {
+    border-left: 4px solid var(--expense);
+}
+
+.delete-btn {
+    background: var(--expense);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.3rem 0.6rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+    margin-left: 1rem;
+}
+
+.form-control {
+    margin-bottom: 1.2rem;
+}
+
+.form-control label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+.form-control input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.btn {
+    width: 100%;
+    padding: 0.8rem;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background: #3a5bef;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 1.5rem;
+    }
+}
