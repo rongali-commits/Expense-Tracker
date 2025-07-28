@@ -2,7 +2,7 @@
 
 A clean, responsive expense tracker built with HTML, CSS, and JavaScript that helps you monitor your income and expenses with visual charts.
 
-[![Live Demo](https://expensetracker763.netlify.app/)
+[![Live Demo] (https://expensetracker763.netlify.app/)
 
 ## ✨ Features
 
